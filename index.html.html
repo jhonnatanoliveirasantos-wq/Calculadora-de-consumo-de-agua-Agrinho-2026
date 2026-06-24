@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigação Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="barra-acessibilidade">
+        <button onclick="mudarContraste()" aria-label="Ativar modo alto contraste">Alto Contraste</button>
+        <button onclick="aumentarFonte()" aria-label="Aumentar tamanho do texto">Aumentar Texto</button>
+        <button onclick="resetarFonte()" aria-label="Resetar tamanho do texto">Texto Normal</button>
+    </header>
+
+    <main class="conteudo">
+        <h1>Cultivo Sustentável: Economize Água</h1>
+        <p>Descubra quantos litros de água você pode economizar mudando a irrigação tradicional da sua horta para o sistema de gotejamento sustentável.</p>
+
+        <section class="formulario">
+            <label for="tamanhoHorta">Tamanho da sua área de plantio (em metros quadrados):</label>
+            <input type="number" id="tamanhoHorta" placeholder="Ex: 50">
+            
+            <button onclick="calcularEconomia()">Calcular Economia</button>
+        </section>
+
+        <section id="resultado" class="resultado-caixa" aria-live="polite">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

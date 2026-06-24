@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Tamanho base bom para leitura */
+}
+
+.barra-acessibilidade {
+    background-color: #2e7d32;
+    padding: 10px;
+    text-align: right;
+}
+
+.barra-acessibilidade button {
+    background-color: white;
+    color: #2e7d32;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.conteudo {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #1b5e20;
+}
+
+.formulario input, .formulario button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resultado-caixa {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    display: none; /* Escondido até calcular */
+}
+
+/* Classe de Alto Contraste que o JS vai aplicar */
+.alto-contraste {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+.alto-contraste .conteudo {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+}
+.alto-contraste h1 {
+    color: #00ff00 !important;
+}
